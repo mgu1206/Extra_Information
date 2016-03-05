@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="yu_cse.graduation_project_edit.activities.LoginMainActivity">
+    <item android:id="@+id/manageMap"
+        android:title="지도 관리"
+        android:orderInCategory="100"  />
+    <item android:id="@+id/action_settings"
+        android:title="로그인 정보 삭제"
+        android:orderInCategory="100"  />
+    <item android:id="@+id/logOut"
+        android:title="로그아웃 합니다."
+        android:orderInCategory="100"  />
+</menu>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:background="@drawable/background_new_other"
+    tools:context=".ShowMyFriend" >
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_sl"
+
+        android:layout_gravity="top"
+        sl:scale_base_width="1000"
+        sl:scale_base_height="1330" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="375"
+            sl:scale_top="50"
+            sl:scale_width="250"
+            sl:scale_height="200"
+            android:id="@+id/main_top"
+            android:src="@drawable/main_top"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/nameTextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            sl:scale_left="150"
+            sl:scale_top="350"
+            sl:scale_width="700"
+            sl:scale_height="150"
+            sl:scale_textsize="90"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            sl:scale_textsize="55"
+            sl:scale_left="150"
+            sl:scale_top="600"
+            sl:scale_width="700"
+            sl:scale_height="150"
+            android:text="이 친구에게 위치 공유 하기"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pos_share_switch"
+            android:gravity="center"
+            sl:scale_width="500"
+            sl:scale_height="200"
+            sl:scale_left="200"
+            sl:scale_top="800"/>
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/acceptBtn"
+            android:scaleType="centerInside"
+
+            android:background="@android:color/transparent"
+            sl:scale_left="70"
+            sl:scale_width="400"
+            sl:scale_height="130"
+            sl:scale_top="1100"
+            android:src="@drawable/accept_click"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelBtn"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            sl:scale_left="550"
+            sl:scale_width="400"
+            sl:scale_height="130"
+            sl:scale_top="1100"
+            android:src="@drawable/cancel_click"/>
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_bottom"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants" >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@android:style/TextAppearance.Small"
+            android:text="ddddd"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textIsSelectable="false"
+
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/user_phone_number"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/black"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="qqq"
+            android:textIsSelectable="false"
+
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_app"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/req_aprove_click"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btn_req_pos"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/show_loc_click"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/online_icon"
+        android:id="@+id/stateIcon"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/textView_Wait"/>
+    <TextView
+        android:id="@+id/textView_Wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textIsSelectable="false"
+        android:focusable="false"
+        android:text="승인대기 중.."/>
+</RelativeLayout>
+	

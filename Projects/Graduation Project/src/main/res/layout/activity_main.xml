@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new"
+    tools:context=".MainActivity" >
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_sl"
+
+        android:layout_gravity="top"
+        sl:scale_base_width="1000"
+        sl:scale_base_height="1400" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="150"
+            sl:scale_top="150"
+            sl:scale_width="700"
+            sl:scale_height="300"
+            android:id="@+id/main_top"
+            android:src="@drawable/main_top"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            sl:scale_left="350"
+            sl:scale_top="600"
+            sl:scale_width="300"
+            sl:scale_height="110"
+            sl:scale_textsize="50"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:id="@+id/inputTextId"
+            android:layout_gravity="center_horizontal"
+            android:hint="아 이 디"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            sl:scale_left="350"
+            sl:scale_top="730"
+            sl:scale_width="300"
+            sl:scale_height="110"
+            sl:scale_textsize="50"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:id="@+id/inputTextPw"
+            android:layout_gravity="center_horizontal"
+            android:hint="비 밀 번 호"
+            />
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="아이디 비번 저장하기"
+            android:textStyle="bold"
+            android:textColor="#3a3a3a"
+            android:id="@+id/autoLoginBox"
+            sl:scale_top="850"
+            sl:scale_left="275"
+            sl:scale_width="550"
+            sl:scale_height="80"
+            sl:scale_textsize="40"
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_click"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            sl:scale_left="325"
+            sl:scale_top="950"
+            sl:scale_width="350"
+            android:id="@+id/loginBtn"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/findlost_click"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            sl:scale_left="325"
+            sl:scale_top="1060"
+            sl:scale_width="350"
+            android:id="@+id/findLostBtn"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/registration_click"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            sl:scale_left="325"
+            sl:scale_top="1170"
+            sl:scale_width="350"
+            android:id="@+id/registrationBtn"
+            android:layout_gravity="center_horizontal"
+            />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

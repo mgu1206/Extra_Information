@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new_other"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+
+    tools:context="yu_cse.graduation_project_edit.activities.FindLostActivity">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_base_width="1000"
+        sl:scale_base_height="1400"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="350"
+            sl:scale_top="80"
+            sl:scale_width="300"
+            sl:scale_height="200"
+            android:src="@drawable/main_top"/>
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_left="175"
+        sl:scale_top="210"
+        sl:scale_width="650"
+        sl:scale_height="200"
+        android:id="@+id/main_top"
+        android:src="@drawable/find_top"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="425"
+            sl:scale_top="430"
+            sl:scale_width="150"
+            sl:scale_height="100"
+            android:id="@+id/find_id"
+            android:src="@drawable/find_id"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="275"
+            sl:scale_top="530"
+            sl:scale_width="450"
+            sl:scale_height="90"
+            android:gravity="center"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            sl:scale_textsize="40"
+            android:id="@+id/inputName"
+            android:hint="Input your name here."
+            android:textColorHint="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="275"
+            sl:scale_top="630"
+            sl:scale_width="450"
+            sl:scale_height="90"
+            android:gravity="center"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            sl:scale_textsize="40"
+            android:id="@+id/inputMail"
+            android:hint="Input your mail here."
+            android:textColorHint="@android:color/black"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/find_id_btn"
+            android:scaleType="centerInside"
+            android:id="@+id/find_id_btn"
+            android:background="@android:color/transparent"
+            sl:scale_left="360"
+            sl:scale_width="280"
+            sl:scale_height="130"
+            sl:scale_top="730"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="425"
+            sl:scale_top="860"
+            sl:scale_width="150"
+            sl:scale_height="100"
+            android:id="@+id/find_pw"
+            android:src="@drawable/find_pw"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="225"
+            sl:scale_top="960"
+            sl:scale_width="550"
+            sl:scale_height="90"
+            android:gravity="center"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            sl:scale_textsize="40"
+            android:id="@+id/inputId"
+            android:hint="Input your ID here."
+            android:textColorHint="@android:color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            sl:scale_left="225"
+            sl:scale_top="1060"
+            sl:scale_width="550"
+            sl:scale_height="90"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            sl:scale_textsize="40"
+            android:id="@+id/inputPhoneNum"
+            android:hint="Input phone num.(only num)"
+            android:textColorHint="@android:color/black"/>
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/find_pw_btn"
+            android:scaleType="centerInside"
+            android:id="@+id/find_pw_btn"
+            android:background="@android:color/transparent"
+            sl:scale_left="360"
+            sl:scale_width="280"
+            sl:scale_height="130"
+            sl:scale_top="1160"/>
+
+
+
+
+
+
+
+
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_bottom"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+
+</RelativeLayout>

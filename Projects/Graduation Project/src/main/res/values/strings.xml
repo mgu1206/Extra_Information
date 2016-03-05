@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Graduation_project_edit</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_find_lost">findLostActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_login__main_">Login_Main_Activity</string>
+    <string name="title_activity_login_main">LoginMainActivity</string>
+    <string name="title_activity_show_my_friend">ShowMyFriend</string>
+    <string name="title_activity_request_friend">RequestFriend</string>
+    <string name="title_activity_app_setting_acvity">AppSettingAcvity</string>
+    <string name="title_activity_friend_information">FriendInformation</string>
+    <string name="title_activity_show_friend_location">ShowFriendLocationActivity</string>
+    <string name="title_activity_map_list">MapListActivity</string>
+    <string name="title_activity_information_edit">InformationEditActivity</string>
+    <string name="title_activity_notification_dialog">NotificationDialog</string>
+</resources>
